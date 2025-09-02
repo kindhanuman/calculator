@@ -86,6 +86,7 @@ equals.addEventListener("click", () => {
     try {
         let safeExpr = expr.replace(/÷/g, "/").replace(/×/g, "*");
         let resultVal = evaluate_expression(safeExpr);
+        console.log();
 
         if (!isFinite(resultVal)) {
             answer.textContent = "Error!";
